@@ -2,8 +2,8 @@
 FROM maven:3.3.9
 
 # Install necessary tools
-RUN apk update
-RUN apk add apache-ant
-RUN apk add python
-RUN apk add py-pip
+RUN apt-get update
+RUN apt-get install apache-ant
+RUN apt-get install python
+RUN apt-get install py-pip
 RUN pip install awscli
